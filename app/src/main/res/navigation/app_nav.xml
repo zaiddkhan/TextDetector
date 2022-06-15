@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/introFrag">
+
+    <fragment
+        android:id="@+id/introFrag"
+        android:name="com.example.textdetector.fragments.IntroFrag"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_introFrag_to_scannerFragment"
+            app:destination="@id/scannerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scannerFragment"
+        android:name="com.example.textdetector.fragments.ScannerFragment"
+        android:label="fragment_scanner"
+        tools:layout="@layout/fragment_scanner" />
+</navigation>
